@@ -3,6 +3,7 @@ use serde_json::Value;
 use std::fs::File;
 use std::io::prelude::*;
 
+/// Returns all the commands listed in the "scripts" section of a `package.json` file.
 pub fn get_node_scripts() -> Result<Vec<Script>, &'static str> {
     let mut file = match File::open("package.json") {
         Ok(f) => f,
