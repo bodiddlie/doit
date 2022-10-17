@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "dothing",
+    "other": "dootherthing"
+  },
+  "dependencies": {
+    "ignore": "this"
+  }
+}
